@@ -1,7 +1,7 @@
 # seal-tlscert
 
-[![CircleCI](https://circleci.com/gh/plossys/seal-tlscert.svg?style=svg&circle-token=055fdbd038072f5d824769cc0527d90cb8fb93ba)](https://circleci.com/gh/plossys/seal-tlscert)
-[![Build status](https://ci.appveyor.com/api/projects/status/pamc5t6a04odkblb?svg=true)](https://ci.appveyor.com/project/Plossys/seal-tlscert)
+[![CircleCI](https://circleci.com/gh/sealsystems/seal-tlscert.svg?style=svg)](https://circleci.com/gh/sealsystems/seal-tlscert)
+[![Appveyor](https://ci.appveyor.com/api/projects/status/dppvysvpsac398h0?svg=true)](https://ci.appveyor.com/project/Plossys/seal-tlscert)
 
 seal-tlscert provides TLS key and certificate.
 
