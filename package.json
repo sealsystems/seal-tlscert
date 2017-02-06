@@ -24,11 +24,11 @@
     "lodash": "4.17.4",
     "nodeenv": "0.2.1",
     "processenv": "0.1.1",
-    "seal-log": "1.1.9"
+    "seal-log": "1.1.10"
   },
   "devDependencies": {
     "assertthat": "0.8.3",
-    "eslint-config-seal": "0.0.8",
+    "eslint-config-seal": "0.0.9",
     "roboter": "0.13.17",
     "roboter-server": "0.13.17"
   },
