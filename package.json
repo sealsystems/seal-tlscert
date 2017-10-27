@@ -1,6 +1,6 @@
 {
   "name": "seal-tlscert",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Provides TLS key and certificate",
   "author": {
     "name": "SEAL Systems AG",
