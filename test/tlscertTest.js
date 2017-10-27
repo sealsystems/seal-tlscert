@@ -30,10 +30,10 @@ suite('tlscert', () => {
           let restoreEnvironment;
 
           suiteSetup((done) => {
-            nodeenv('TLS_DIR', undefined, (restore) => {
-              restoreEnvironment = restore;
-              done();
-            });
+            const restore = nodeenv('TLS_DIR', undefined);
+
+            restoreEnvironment = restore;
+            done();
           });
 
           suiteTeardown((done) => {
@@ -66,10 +66,10 @@ suite('tlscert', () => {
           let restoreEnvironment;
 
           suiteSetup((done) => {
-            nodeenv('TLS_DIR', path.join(__dirname, 'keyCertCa'), (restore) => {
-              restoreEnvironment = restore;
-              done();
-            });
+            const restore = nodeenv('TLS_DIR', path.join(__dirname, 'keyCertCa'));
+
+            restoreEnvironment = restore;
+            done();
           });
 
           suiteTeardown((done) => {
@@ -78,13 +78,13 @@ suite('tlscert', () => {
           });
 
           test('throws an error if the configured directory does not exist.', (done) => {
-            nodeenv('TLS_DIR', path.join(__dirname, 'does-not-exist'), (restore) => {
-              assert.that(() => {
-                tlscert.get();
-              }).is.throwing();
-              restore();
-              done();
-            });
+            const restore = nodeenv('TLS_DIR', path.join(__dirname, 'does-not-exist'));
+
+            assert.that(() => {
+              tlscert.get();
+            }).is.throwing();
+            restore();
+            done();
           });
 
           test('contains a key.', (done) => {
@@ -109,33 +109,33 @@ suite('tlscert', () => {
 
           suite('handles optional types', () => {
             test('ignores a missing ca certificate.', (done) => {
-              nodeenv('TLS_DIR', path.join(__dirname, 'keyCert'), (restore) => {
-                assert.that(() => {
-                  tlscert.get();
-                }).is.not.throwing();
-                restore();
-                done();
-              });
+              const restore = nodeenv('TLS_DIR', path.join(__dirname, 'keyCert'));
+
+              assert.that(() => {
+                tlscert.get();
+              }).is.not.throwing();
+              restore();
+              done();
             });
 
             test('throws an error if the key is missing.', (done) => {
-              nodeenv('TLS_DIR', path.join(__dirname, 'certCa'), (restore) => {
-                assert.that(() => {
-                  tlscert.get();
-                }).is.throwing();
-                restore();
-                done();
-              });
+              const restore = nodeenv('TLS_DIR', path.join(__dirname, 'certCa'));
+
+              assert.that(() => {
+                tlscert.get();
+              }).is.throwing();
+              restore();
+              done();
             });
 
             test('throws an error if the certificate is missing.', (done) => {
-              nodeenv('TLS_DIR', path.join(__dirname, 'keyCa'), (restore) => {
-                assert.that(() => {
-                  tlscert.get();
-                }).is.throwing();
-                restore();
-                done();
-              });
+              const restore = nodeenv('TLS_DIR', path.join(__dirname, 'keyCa'));
+
+              assert.that(() => {
+                tlscert.get();
+              }).is.throwing();
+              restore();
+              done();
             });
           });
         });
@@ -143,19 +143,19 @@ suite('tlscert', () => {
 
       suite('using another environment variable', () => {
         test('contains a default certificate if not set.', (done) => {
-          nodeenv('TLS_FOO', undefined, (restore) => {
-            assert.that(tlscert.get('TLS_FOO').cert).is.startingWith('-----BEGIN CERTIFICATE-----');
-            restore();
-            done();
-          });
+          const restore = nodeenv('TLS_FOO', undefined);
+
+          assert.that(tlscert.get('TLS_FOO').cert).is.startingWith('-----BEGIN CERTIFICATE-----');
+          restore();
+          done();
         });
 
         test('contains a certificate if set.', (done) => {
-          nodeenv('TLS_FOO', path.join(__dirname, 'keyCertCa'), (restore) => {
-            assert.that(tlscert.get('TLS_FOO').cert).is.startingWith('cert');
-            restore();
-            done();
-          });
+          const restore = nodeenv('TLS_FOO', path.join(__dirname, 'keyCertCa'));
+
+          assert.that(tlscert.get('TLS_FOO').cert).is.startingWith('cert');
+          restore();
+          done();
         });
       });
     });
