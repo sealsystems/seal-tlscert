@@ -3,7 +3,7 @@
 const roboter = require('roboter');
 
 // dummy require to avoid an unused dependencies error
-require('eslint-config-seal');
+require('@sealsystems/eslint-config-es');
 
 const tlsSubject = '/C=DE/ST=Bavaria/L=Roettenbach/O=SEAL Systems AG/OU=COM/CN=localhost';
 const cert = 'keys/localhost.selfsigned/cert.pem';
