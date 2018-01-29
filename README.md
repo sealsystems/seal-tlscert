@@ -1,14 +1,14 @@
-# seal-tlscert
+# @sealsystems/node-tlscert
 
 [![CircleCI](https://circleci.com/gh/sealsystems/seal-tlscert.svg?style=svg)](https://circleci.com/gh/sealsystems/seal-tlscert)
 [![Appveyor](https://ci.appveyor.com/api/projects/status/dppvysvpsac398h0?svg=true)](https://ci.appveyor.com/project/Plossys/seal-tlscert)
 
-seal-tlscert provides TLS key and certificate.
+@sealsystems/node-tlscert provides TLS key and certificate.
 
 ## Installation
 
 ```bash
-npm install seal-tlscert
+npm install @sealsystems/tlscert
 ```
 
 ## Quick start
@@ -16,7 +16,7 @@ npm install seal-tlscert
 First you need to add a reference to seal-tlscert within your application.
 
 ```javascript
-const tlscert = require('seal-tlscert');
+const tlscert = require('@sealsystems/tlscert');
 ```
 
 To get the content of the certificate and private key from a specific directory, first you need to set the `TLS_DIR` environment variable:
