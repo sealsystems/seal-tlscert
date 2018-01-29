@@ -27,8 +27,8 @@
     "seal-log": "1.2.0"
   },
   "devDependencies": {
+    "@sealsystems/eslint-config-es": "1.0.0",
     "assertthat": "0.11.0",
-    "eslint-config-seal": "0.0.9",
     "roboter": "0.15.4",
     "roboter-server": "0.15.4"
   },

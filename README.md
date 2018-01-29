@@ -8,7 +8,7 @@ seal-tlscert provides TLS key and certificate.
 ## Installation
 
 ```bash
-$ npm install seal-tlscert
+npm install seal-tlscert
 ```
 
 ## Quick start
@@ -16,19 +16,19 @@ $ npm install seal-tlscert
 First you need to add a reference to seal-tlscert within your application.
 
 ```javascript
-var tlscert = require('seal-tlscert');
+const tlscert = require('seal-tlscert');
 ```
 
 To get the content of the certificate and private key from a specific directory, first you need to set the `TLS_DIR` environment variable:
 
 ```bash
-$ export TLS_DIR=$(pwd)
+export TLS_DIR=$(pwd)
 ```
 
 Then, call the `get` function:
 
 ```javascript
-var keystore = tlscert.get();
+const keystore = await tlscert.get();
 
 console.log(keystore);
 // => {
@@ -53,7 +53,7 @@ Please note that the files must be called `key.pem`, `cert.pem` and `ca.pem`, an
 
 This module uses a self-signed certificate if no other is provided. This certificate is valid for 10 years (3650 days to be exact ;-)). To see the details of the certificate, call:
 
-```
+```bash
 npm run show-cert
 ```
 
