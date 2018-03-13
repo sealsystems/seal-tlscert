@@ -1,7 +1,7 @@
 # @sealsystems/node-tlscert
 
-[![CircleCI](https://circleci.com/gh/sealsystems/seal-tlscert.svg?style=svg)](https://circleci.com/gh/sealsystems/seal-tlscert)
-[![Appveyor](https://ci.appveyor.com/api/projects/status/dppvysvpsac398h0?svg=true)](https://ci.appveyor.com/project/Plossys/seal-tlscert)
+[![CircleCI](https://circleci.com/gh/sealsystems/node-tlscert.svg?style=svg)](https://circleci.com/gh/sealsystems/node-tlscert)
+[![AppVeyor](https://ci.appveyor.com/api/projects/status/8pu9ai5xx09ck32o?svg=true)](https://ci.appveyor.com/project/Plossys/node-tlscert)
 
 @sealsystems/node-tlscert provides TLS key and certificate.
 
@@ -13,7 +13,7 @@ npm install @sealsystems/tlscert
 
 ## Quick start
 
-First you need to add a reference to seal-tlscert within your application.
+First you need to add a reference to @sealsystems/tlscert within your application.
 
 ```javascript
 const tlscert = require('@sealsystems/tlscert');
