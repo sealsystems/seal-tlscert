@@ -1,9 +1,9 @@
-# @sealsystems/node-tlscert
+# @sealsystems/tlscert
 
 [![CircleCI](https://circleci.com/gh/sealsystems/node-tlscert.svg?style=svg)](https://circleci.com/gh/sealsystems/node-tlscert)
 [![AppVeyor](https://ci.appveyor.com/api/projects/status/8pu9ai5xx09ck32o?svg=true)](https://ci.appveyor.com/project/Plossys/node-tlscert)
 
-@sealsystems/node-tlscert provides TLS key and certificate.
+@sealsystems/tlscert provides TLS key and certificate.
 
 ## Installation
 
