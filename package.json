@@ -34,5 +34,11 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/sealsystems/node-tlscert.git"
+  },
+  "release": {
+    "extends": "@sealsystems/semantic-release-config/node-module"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
