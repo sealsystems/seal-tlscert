@@ -1,6 +1,6 @@
 {
   "name": "@sealsystems/tlscert",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Provides TLS key and certificate",
   "author": {
     "name": "SEAL Systems AG",

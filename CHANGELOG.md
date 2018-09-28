@@ -1,3 +1,14 @@
+## 2.1.1 (2018-09-28)
+
+### Bug Fixes
+
+
+#### include default keys to npm module ([13d48ac](https://github.com/sealsystems/node-tlscert/commit/13d48ac))
+
+
+
+---
+
 ## 2.1.0 (2018-09-28)
 
 ### Bug Fixes
