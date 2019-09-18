@@ -85,9 +85,11 @@ suite('tlscert', () => {
           test('throws an error if the configured directory does not exist.', async () => {
             const restore = nodeenv('TLS_DIR', path.join(__dirname, 'does-not-exist'));
 
-            await assert.that(async () => {
-              await tlscert.get();
-            }).is.throwingAsync();
+            await assert
+              .that(async () => {
+                await tlscert.get();
+              })
+              .is.throwingAsync();
             restore();
           });
 
@@ -119,27 +121,33 @@ suite('tlscert', () => {
             test('ignores a missing ca certificate.', async () => {
               const restore = nodeenv('TLS_DIR', path.join(__dirname, 'keyCert'));
 
-              await assert.that(async () => {
-                await tlscert.get();
-              }).is.not.throwingAsync();
+              await assert
+                .that(async () => {
+                  await tlscert.get();
+                })
+                .is.not.throwingAsync();
               restore();
             });
 
             test('throws an error if the key is missing.', async () => {
               const restore = nodeenv('TLS_DIR', path.join(__dirname, 'certCa'));
 
-              await assert.that(async () => {
-                await tlscert.get();
-              }).is.throwingAsync();
+              await assert
+                .that(async () => {
+                  await tlscert.get();
+                })
+                .is.throwingAsync();
               restore();
             });
 
             test('throws an error if the certificate is missing.', async () => {
               const restore = nodeenv('TLS_DIR', path.join(__dirname, 'keyCa'));
 
-              await assert.that(async () => {
-                await tlscert.get();
-              }).is.throwingAsync();
+              await assert
+                .that(async () => {
+                  await tlscert.get();
+                })
+                .is.throwingAsync();
               restore();
             });
           });
