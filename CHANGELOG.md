@@ -1,3 +1,24 @@
+## 2.2.0 (2019-09-25)
+
+### Features
+
+
+#### PLS-431 ([9860307](https://github.com/sealsystems/node-tlscert/commit/9860307))
+
+- Removed roboter
+ - Installed latest dev stack
+ - Updated scripts
+ - Updated GitHub Pull Request template
+ - Updated CircleCI config
+ - Updated appveyor config
+ - Updated dependencies
+ - Added dependabot config
+ - Added `package-lock.json` to git
+ - Fixed linting
+
+
+---
+
 ## 2.1.2 (2018-11-19)
 
 
