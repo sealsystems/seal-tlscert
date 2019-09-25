@@ -23,7 +23,7 @@
     "@sealsystems/log": "2.1.0",
     "lodash.clonedeep": "4.5.0",
     "nodeenv": "1.1.0",
-    "processenv": "1.1.0"
+    "processenv": "2.0.1"
   },
   "devDependencies": {
     "@sealsystems/eslint-config-es": "3.5.3",
