@@ -10,33 +10,32 @@
   "license": "MIT",
   "scripts": {
     "bot": "bot",
-    "release": "semantic-release --branch ${CIRCLE_BRANCH}",
-    "test": "npm run bot test-units",
-    "coverage": "nyc --reporter=text --reporter=lcov mocha",
-    "report": "npm run coverage && if [[ $OSTYPE == darwin* ]]; then open=open; else open=xdg-open; fi && $open coverage/lcov-report/index.html",
-    "generate-cert": "bot generate-cert",
-    "show-cert": "bot show-cert"
+    "release": "release",
+    "test": "test-run",
+    "lint": "lint",
+    "lint:fix": "lint-fix",
+    "test:coverage": "test-coverage",
+    "test:coverage:check": "test-coverage-check",
+    "test:report": "test-report"
   },
   "main": "lib/tlscert.js",
   "dependencies": {
-    "@sealsystems/log": "1.3.1",
+    "@sealsystems/log": "2.1.0",
     "lodash.clonedeep": "4.5.0",
-    "nodeenv": "1.0.0",
+    "nodeenv": "1.1.0",
     "processenv": "1.1.0"
   },
   "devDependencies": {
-    "@sealsystems/eslint-config-es": "1.1.1",
-    "assertthat": "1.0.0",
-    "nyc": "12.0.2",
-    "roboter": "0.16.0",
-    "roboter-server": "0.16.0"
+    "@sealsystems/eslint-config-es": "3.5.3",
+    "@sealsystems/mocha": "4.1.1",
+    "@sealsystems/semantic-release": "4.0.12"
   },
   "repository": {
     "type": "git",
     "url": "git://github.com/sealsystems/node-tlscert.git"
   },
   "release": {
-    "extends": "@sealsystems/semantic-release-config/node-module"
+    "extends": "@sealsystems/semantic-release/node-module"
   },
   "publishConfig": {
     "access": "public"
