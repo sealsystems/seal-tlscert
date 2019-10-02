@@ -21,13 +21,13 @@
   },
   "main": "lib/tlscert.js",
   "dependencies": {
-    "@sealsystems/log": "2.1.0",
+    "@sealsystems/log": "git+https://git@github.com/sealsystems/node-log.git#PLS-431",
     "lodash.clonedeep": "4.5.0",
     "nodeenv": "1.1.0",
     "processenv": "1.1.0"
   },
   "devDependencies": {
-    "@sealsystems/eslint-config-es": "3.5.4",
+    "@sealsystems/eslint-config-es": "git+https://git@github.com/sealsystems/node-eslint-config-es.git#PLS-431",
     "@sealsystems/mocha": "4.1.1",
     "@sealsystems/semantic-release": "4.0.12"
   },
