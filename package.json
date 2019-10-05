@@ -26,7 +26,7 @@
     "processenv": "1.1.0"
   },
   "devDependencies": {
-    "@sealsystems/eslint-config-es": "3.5.4",
+    "@sealsystems/eslint-config-es": "3.5.5",
     "@sealsystems/mocha": "4.1.1",
     "@sealsystems/semantic-release": "4.0.13"
   },
