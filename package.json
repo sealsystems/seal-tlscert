@@ -21,7 +21,7 @@
   },
   "main": "lib/tlscert.js",
   "dependencies": {
-    "@sealsystems/log": "git+https://git@github.com/sealsystems/node-log.git#PLS-431",
+    "@sealsystems/log": "2.2.0",
     "lodash.clonedeep": "4.5.0",
     "nodeenv": "1.1.0",
     "processenv": "1.1.0"
