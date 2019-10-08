@@ -1,3 +1,17 @@
+## 2.2.1 (2019-10-08)
+
+### Chores
+
+
+#### bump [@sealsystems](https://github.com/sealsystems)/log from 2.1.0 to 2.2.0 ([2b38a4e](https://github.com/sealsystems/node-tlscert/commit/2b38a4e))
+
+Bumps @sealsystems/log from 2.1.0 to 2.2.0.
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+
+---
+
 ## 2.2.0 (2019-09-25)
 
 ### Features
