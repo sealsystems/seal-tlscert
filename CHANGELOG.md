@@ -1,3 +1,23 @@
+## 2.3.0 (2019-10-14)
+
+### Features
+
+
+#### PLS-431, [PLS-431](https://jira.sealsystems.de/jira/browse/PLS-431) ([9595b9e](https://github.com/sealsystems/node-tlscert/commit/9595b9e))
+
+- Removed roboter
+ - Updated dependencies
+ - Updated CircleCI config
+ - Updated appveyor config
+ - Updated GitHub Pull Request template
+ - Added dependabot config
+ - Added `package-lock.json` to git
+ - Fixed linting
+ - Used `seal-node:oss-module-update`
+
+
+---
+
 ## 2.2.1 (2019-10-08)
 
 ### Chores
