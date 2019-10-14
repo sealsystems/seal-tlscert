@@ -16,7 +16,8 @@
     "lint:fix": "lint-fix",
     "test:coverage": "test-coverage",
     "test:coverage:check": "test-coverage-check",
-    "test:report": "test-report"
+    "test:report": "test-report",
+    "licenses": "license-checker --production --csv"
   },
   "main": "lib/tlscert.js",
   "dependencies": {
