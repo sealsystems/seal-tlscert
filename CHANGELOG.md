@@ -1,3 +1,14 @@
+## 2.3.1 (2020-03-09)
+
+### Chores
+
+
+#### Switched to github-actions. ([7266410](https://github.com/sealsystems/node-tlscert/commit/7266410))
+
+
+
+---
+
 ## 2.3.0 (2019-10-14)
 
 ### Features
