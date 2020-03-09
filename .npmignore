@@ -1,4 +1,6 @@
 *
 !/bin/**
-!/keys/**
 !/lib/**
+
+# Yeoman generators
+!/generators/**
