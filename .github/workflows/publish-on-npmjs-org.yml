@@ -4,9 +4,6 @@ on:
   release:
     types: [published]
 
-env:
-  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-
 jobs:
   Publish:
     runs-on: ubuntu-18.04
@@ -33,15 +30,20 @@ jobs:
     - name: Install dependencies
       run: npm ci
       env:
+        # Use personal access token, must be set for *each step*
         NODE_AUTH_TOKEN: ${{secrets.GITHUB_CI_TOKEN}}
 
     - name: Publish on npmjs.org
       run: |
         echo "Patching package.json ..."
         sed -i 's|"registry": "https://npm.pkg.github.com"|"registry": "https://registry.npmjs.org"|' package.json
+        cat package.json
 
         echo "Patching .npmrc ..."
         echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
+        cat .npmrc
 
         echo "Publishing..."
         npm publish
+      env:
+        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

@@ -40,8 +40,6 @@ jobs:
         node-version: 12.13.1
         registry-url: https://npm.pkg.github.com/
         scope: "@sealsystems"
-      env:
-        NODE_AUTH_TOKEN: ${{secrets.GITHUB_CI_TOKEN}}
 
     - name: Cache Node.js modules
       uses: actions/cache@v1
@@ -54,9 +52,15 @@ jobs:
 
     - name: Install dependencies
       run: npm ci
+      env:
+        # Use personal access token, must be set for *each step*
+        NODE_AUTH_TOKEN: ${{secrets.GITHUB_CI_TOKEN}}
 
     - name: Run tests
       run: npm run bot
+      env:
+        # Use personal access token, must be set for *each step*
+        NODE_AUTH_TOKEN: ${{secrets.GITHUB_CI_TOKEN}}
 
   Test-Windows:
     runs-on: windows-2019
@@ -70,8 +74,6 @@ jobs:
         node-version: 12.13.1
         registry-url: https://npm.pkg.github.com/
         scope: "@sealsystems"
-      env:
-        NODE_AUTH_TOKEN: ${{secrets.GITHUB_CI_TOKEN}}
 
     - name: Install MongoDB 3.6.17
       run: |
@@ -119,6 +121,12 @@ jobs:
 
     - name: Install dependencies
       run: npm ci
+      env:
+        # Use personal access token, must be set for *each step*
+        NODE_AUTH_TOKEN: ${{secrets.GITHUB_CI_TOKEN}}
 
     - name: Run tests
       run: npm run bot
+      env:
+        # Use personal access token, must be set for *each step*
+        NODE_AUTH_TOKEN: ${{secrets.GITHUB_CI_TOKEN}}
