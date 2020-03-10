@@ -37,11 +37,10 @@ jobs:
       run: |
         echo "Patching package.json ..."
         sed -i 's|"registry": "https://npm.pkg.github.com"|"registry": "https://registry.npmjs.org"|' package.json
-        cat package.json
 
         echo "Patching .npmrc ..."
-        echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
-        cat .npmrc
+        echo "@sealsystems:registry=https://registry.npmjs.org" > .npmrc
+        echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" >> .npmrc
 
         echo "Publishing..."
         npm publish
