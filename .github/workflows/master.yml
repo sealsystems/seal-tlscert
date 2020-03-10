@@ -35,7 +35,7 @@ jobs:
       with:
         node-version: 12.13.1
         registry-url: https://npm.pkg.github.com/
-        scope: '@sealsystems'
+        scope: "@sealsystems"
 
     - name: Cache Node.js modules
       uses: actions/cache@v1
@@ -68,7 +68,7 @@ jobs:
       with:
         node-version: 12.13.1
         registry-url: https://npm.pkg.github.com/
-        scope: '@sealsystems'
+        scope: "@sealsystems"
 
     - name: Install MongoDB 3.6.17
       run: |
@@ -153,7 +153,7 @@ jobs:
       with:
         node-version: 12.13.1
         registry-url: https://npm.pkg.github.com/
-        scope: '@sealsystems'
+        scope: "@sealsystems"
 
     - name: Cache Node.js modules
       uses: actions/cache@v1
@@ -168,6 +168,13 @@ jobs:
       run: npm ci
       env:
         NODE_AUTH_TOKEN: ${{secrets.GITHUB_CI_TOKEN}}
+
+    - name: Bugfix release: Set distribution tag accordingly in oder to not remove 'latest' tag from the current version
+      # Only on bugfix branches
+      if: github.ref != 'refs/heads/master'
+      run: |
+        echo "Patching package.json ..."
+        sed -i 's|"registry": "https://npm.pkg.github.com"|"registry": "https://npm.pkg.github.com", "tag": "bugfix"|' package.json
 
     - name: Trigger release
       run: npm run release
