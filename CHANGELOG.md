@@ -1,3 +1,16 @@
+## 2.3.5 (2020-03-10)
+
+### Chores
+
+
+#### Yoed ([87af4c2](https://github.com/sealsystems/node-tlscert/commit/87af4c2))
+
+#### Yoed ([30a0213](https://github.com/sealsystems/node-tlscert/commit/30a0213))
+
+
+
+---
+
 ## 2.3.4 (2020-03-10)
 
 ### Chores
