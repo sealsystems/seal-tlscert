@@ -1,3 +1,14 @@
+## 2.3.7 (2020-03-10)
+
+### Chores
+
+
+#### Update publish workflow ([cb99aae](https://github.com/sealsystems/node-tlscert/commit/cb99aae))
+
+
+
+---
+
 ## 2.3.6 (2020-03-10)
 
 ### Chores
