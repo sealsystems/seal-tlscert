@@ -1,3 +1,20 @@
+## 2.3.2 (2020-03-10)
+
+### Chores
+
+
+#### Move keys into lib folder ([d3b7d9b](https://github.com/sealsystems/node-tlscert/commit/d3b7d9b))
+
+#### Yoed ([d49dc6f](https://github.com/sealsystems/node-tlscert/commit/d49dc6f))
+
+#### Yoed ([05d1cc6](https://github.com/sealsystems/node-tlscert/commit/05d1cc6))
+
+#### bump [@sealsystems](https://github.com/sealsystems)/log from 2.2.0 to 2.2.1 ([#31](https://github.com/sealsystems/node-tlscert/issues/31)) ([ae1eaba](https://github.com/sealsystems/node-tlscert/commit/ae1eaba))
+
+
+
+---
+
 ## 2.3.1 (2020-03-09)
 
 ### Chores
