@@ -20,6 +20,8 @@ jobs:
         node-version: 12.13.1
         registry-url: https://npm.pkg.github.com/
         scope: '@sealsystems'
+      env:
+        NODE_AUTH_TOKEN: ${{secrets.GITHUB_CI_TOKEN}}
 
     - name: Cache Node.js modules
       uses: actions/cache@v1
