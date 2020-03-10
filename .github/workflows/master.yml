@@ -171,3 +171,5 @@ jobs:
 
     - name: Trigger release
       run: npm run release
+      env:
+        NODE_AUTH_TOKEN: ${{secrets.GITHUB_CI_TOKEN}}
