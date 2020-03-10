@@ -37,7 +37,9 @@ jobs:
     - name: Use Node.js 12.13.1
       uses: actions/setup-node@v1
       with:
-        NODE_VERSION: 12.13.1
+        node-version: 12.13.1
+        registry-url: https://npm.pkg.github.com/
+        scope: '@sealsystems'
 
     - name: Cache Node.js modules
       uses: actions/cache@v1
@@ -63,7 +65,9 @@ jobs:
     - name: Use Node.js 12.13.1
       uses: actions/setup-node@v1
       with:
-        NODE_VERSION: 12.13.1
+        node-version: 12.13.1
+        registry-url: https://npm.pkg.github.com/
+        scope: '@sealsystems'
 
     - name: Install MongoDB 3.6.17
       run: |

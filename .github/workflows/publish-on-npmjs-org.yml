@@ -17,7 +17,9 @@ jobs:
     - name: Use Node.js ${{ env.NODE_VERSION }}
       uses: actions/setup-node@v1
       with:
-        NODE_VERSION: ${{ env.NODE_VERSION }}
+        node-version: 12.13.1
+        registry-url: https://npm.pkg.github.com/
+        scope: '@sealsystems'
 
     - name: Cache Node.js modules
       uses: actions/cache@v1
