@@ -48,6 +48,9 @@ jobs:
         path: ~/.npm
         key: ${{ runner.os }}-${{ env.cache-name }}-12.13.1-${{ hashFiles('**/package-lock.json') }}
 
+    - name: Setup tmate session
+      uses: mxschmitt/action-tmate@v1
+
     - name: Install dependencies
       run: |
         cat /home/runner/work/_temp/.npmrc
