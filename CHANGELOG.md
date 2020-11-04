@@ -1,3 +1,14 @@
+## 2.3.9 (2020-11-04)
+
+### Chores
+
+
+#### bump [@sealsystems](https://github.com/sealsystems)/log from 2.2.2 to 2.2.3 ([#64](https://github.com/sealsystems/node-tlscert/issues/64)) ([0bbfcf7](https://github.com/sealsystems/node-tlscert/commit/0bbfcf7))
+
+
+
+---
+
 ## 2.3.8 (2020-08-02)
 
 ### Chores
