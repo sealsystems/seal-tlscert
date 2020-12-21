@@ -1,3 +1,10 @@
+## 2.3.10 (2020-12-21)
+
+### Chores
+
+
+Trigger release ([1f86f7c](https://github.com/sealsystems/node-tlscert/commit/1f86f7c))
+
 ## 2.3.9 (2020-11-04)
 
 ### Chores
