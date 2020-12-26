@@ -33,7 +33,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sealsystems/tlscert"
+    "url": "https://github.com/sealsystems/node-tlscert"
   },
   "release": {
     "extends": "@sealsystems/semantic-release/node-module"
