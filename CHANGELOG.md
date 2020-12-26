@@ -1,3 +1,12 @@
+## 2.3.11 (2020-12-26)
+
+### Chores
+
+
+Update build configuration ([e6e7ee6](https://github.com/sealsystems/node-tlscert/commit/e6e7ee6))
+
+Update build configuration ([9731feb](https://github.com/sealsystems/node-tlscert/commit/9731feb))
+
 ## 2.3.10 (2020-12-21)
 
 ### Chores
