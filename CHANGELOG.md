@@ -1,3 +1,10 @@
+## 2.3.12 (2020-12-30)
+
+### Chores
+
+
+Update build configuration ([ae595c8](https://github.com/sealsystems/node-tlscert/commit/ae595c8))
+
 ## 2.3.11 (2020-12-26)
 
 ### Chores
