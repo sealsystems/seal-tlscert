@@ -91,7 +91,7 @@ jobs:
           fi
 
           if [ -n "com-infrastructure" ]; then
-            reviewerOption="--reviewers com-infrastructure"
+            reviewerOption="--reviewer com-infrastructure"
           fi
 
           gh pr create \
