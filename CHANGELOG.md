@@ -1,3 +1,10 @@
+## 2.3.14 (2021-01-16)
+
+### Chores
+
+
+Update build config ([2d84aa3](https://github.com/sealsystems/node-tlscert/commit/2d84aa3))
+
 ## 2.3.13 (2021-01-01)
 
 ### Chores
