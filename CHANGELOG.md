@@ -1,3 +1,10 @@
+## 2.3.16 (2021-01-17)
+
+### Chores
+
+
+bump node-fetch from 2.6.0 to 2.6.1 ([1d9479b](https://github.com/sealsystems/node-tlscert/commit/1d9479b))
+
 ## 2.3.15 (2021-01-17)
 
 ### Chores
