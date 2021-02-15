@@ -23,7 +23,7 @@
   "dependencies": {
     "@sealsystems/log": "2.2.5",
     "lodash.clonedeep": "4.5.0",
-    "nodeenv": "1.1.0",
+    "nodeenv": "3.0.43",
     "processenv": "1.1.0"
   },
   "devDependencies": {
