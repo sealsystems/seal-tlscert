@@ -1,3 +1,10 @@
+## 2.3.19 (2021-03-26)
+
+### Chores
+
+
+bump [@sealsystems](https://github.com/sealsystems)/log from 2.3.1 to 2.3.2 ([#101](https://github.com/sealsystems/node-tlscert/issues/101)) ([fd34364](https://github.com/sealsystems/node-tlscert/commit/fd34364))
+
 ## 2.3.18 (2021-03-26)
 
 ### Chores
